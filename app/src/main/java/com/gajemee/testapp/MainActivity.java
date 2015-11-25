@@ -11,6 +11,13 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.gajemee.testapp.async.GetJsonFromURLTest;
+import com.gajemee.testapp.utils.JSONParser;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private EditText input_text;
@@ -79,5 +86,10 @@ public class MainActivity extends AppCompatActivity {
     public void goToScrollViewLayout(View view){
         Intent click = new Intent(view.getContext(), ScrollViewActivity.class);
         startActivityForResult(click, 0);
+    }
+
+    public void getJsonTest(View view){
+        GetJsonFromURLTest test = new GetJsonFromURLTest();
+        test.execute();
     }
 }

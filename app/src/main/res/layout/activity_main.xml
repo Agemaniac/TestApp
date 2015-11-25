@@ -14,6 +14,13 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/jsonTest"
+        android:id="@+id/jsonTest"
+        android:onClick="getJsonTest"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="@string/switchImagesLayout"
         android:id="@+id/switchImagesLayout"
         android:onClick="goToSwitchImagesActivity"/>
